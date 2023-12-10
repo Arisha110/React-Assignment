@@ -21,6 +21,7 @@ const BurgerSingh = () => {
             </div>
 
             <div className='flex flex-col gap-2'>
+                
                 <h2 className="font-bold text-3xl ">Burger Singh Television Advertisement</h2>
                 <p>Created on: 10 October, 2021</p>
                 <div className='flex '>
@@ -43,15 +44,18 @@ const BurgerSingh = () => {
                 </div>
 
                 <div className='flex gap-4  items-center  '>
-                    <button onClick={
-                        ()=> setTimeCard((prev)=> !prev)
-                    } className='flex items-center rounded-lg justify-center gap-2  w-44 h-8 bg-indigo-700 text-white 
+
+                    <button
+                        onClick={() => setTimeCard((prev) => !prev)}
+                        className='flex items-center rounded-lg justify-center gap-2  w-44 h-8 bg-indigo-700 text-white 
                     hover:bg-blue-900 text-sm focus:bg-slate-500'>
+
                         <CiCircleCheck size={18} />
                         Add Time card
                     </button>
 
-                    <button className='flex items-center gap-2 font-bold  rounded-lg justify-center w-28 h-8 bg-yellow-400'>
+                    <button
+                        className='flex items-center gap-2 font-bold  rounded-lg justify-center w-28 h-8 bg-yellow-400'>
                         Filters
                         <BsSortDownAlt />
                     </button>
@@ -59,7 +63,7 @@ const BurgerSingh = () => {
                 </div>
                 {
                     addTimeCard &&
-                    <AddTimeCard addTimeCard={addTimeCard} setTimeCard={setTimeCard}/>
+                    <AddTimeCard addTimeCard={addTimeCard} setTimeCard={setTimeCard} />
                 }
 
             </div>
